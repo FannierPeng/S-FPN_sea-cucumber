@@ -56,7 +56,7 @@ data path format  ($FPN_ROOT/data/io/divide_data.py)
   python $FPN_ROOT/tools/test.py  
   ``` 
 
-## eval    
+## Eval    
   ```Shell    
   cd $FPN_ROOT/tools   
   python eval.py
