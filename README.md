@@ -34,22 +34,16 @@ data path format  ($FPN_ROOT/data/io/divide_data.py)
 ## Demo          
 1、Unzip the weight $FPN_ROOT/output/res101_trained_weights/*.rar    
 2、put images in $FPN_ROOT/tools/inference_image   
-3、Configure parameters in $FPN_ROOT/libs/configs/cfgs.py and modify the project's root directory 
-4、image slice           
+3、Configure parameters in $FPN_ROOT/libs/configs/cfgs.py and modify the project's root directory
+4、image inference           
   ```Shell    
   cd $FPN_ROOT/tools
   python inference.py   
   ```     
-5、big image      
-  ```Shell    
-  cd $FPN_ROOT/tools
-  python demo.py --src_folder=.\demo_src --des_folder=.\demo_des      
-  ``` 
-
   
 ## Train
 1、Modify $FPN_ROOT/libs/lable_name_dict/***_dict.py, corresponding to the number of categories in the configuration file    
-2、download pretrain weight([resnet_v1_101_2016_08_28.tar.gz](http://download.tensorflow.org/models/resnet_v1_101_2016_08_28.tar.gz) or [resnet_v1_50_2016_08_28.tar.gz](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz)) from [here](https://github.com/yangxue0827/models/tree/master/slim), then extract to folder $FPN_ROOT/data/pretrained_weights    
+2、download pretrain weight([resnet_v1_101.ckpt] or [resnet_v1_50.ckpt]) from [here](https://pan.baidu.com/s/16E-zdpyr-QbGTjMiprZuKw), Fetch Code: 67rc, then extract to folder $FPN_ROOT/data/pretrained_weights    
 3、    
   ```Shell    
   cd $FPN_ROOT/tools
@@ -75,7 +69,7 @@ data path format  ($FPN_ROOT/data/io/divide_data.py)
 
 ## Test results    
 ### sea cucumber
-![11](tools/test_result/00_gt.jpg)   
+![11](tools/test_result/458dehazed.jpg_fpn.jpg)   
 ![12](tools/test_result/00_fpn.jpg)       
 
 ## Note 
