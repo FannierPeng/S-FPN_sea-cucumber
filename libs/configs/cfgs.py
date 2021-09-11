@@ -7,8 +7,8 @@ ROOT_PATH = os.path.abspath('..')
 # pretrain weights path
 TEST_SAVE_PATH = ROOT_PATH + r'/tools/test_result'
 # INFERENCE_IMAGE_PATH = os.path.abspath('../..')+ r'/DataSet/sea_cucumber/test/JPEGImages'
-INFERENCE_IMAGE_PATH = ROOT_PATH +r'/inference_result/videos'
-INFERENCE_SAVE_PATH = ROOT_PATH + r'/inference_result'
+INFERENCE_IMAGE_PATH = ROOT_PATH +r'tools/inference_result/videos'
+INFERENCE_SAVE_PATH = ROOT_PATH + r'tools/inference_result'
 #重点改
 NET_NAME = 'resnet_v1_50'
 # NET_NAME = 'mobilenet_224'
