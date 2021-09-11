@@ -34,7 +34,7 @@ data path format  ($FPN_ROOT/data/io/divide_data.py)
 ## Demo          
 1、Unzip the weight $FPN_ROOT/output/res101_trained_weights/*.rar    
 2、put images in $FPN_ROOT/tools/inference_image   
-3、Configure parameters in $FPN_ROOT/libs/configs/cfgs.py and modify the project's root directory
+3、Configure parameters in $FPN_ROOT/libs/configs/cfgs.py and modify the project's root directory        
 4、image inference           
   ```Shell    
   cd $FPN_ROOT/tools
@@ -69,8 +69,9 @@ data path format  ($FPN_ROOT/data/io/divide_data.py)
 
 ## Test results    
 ### sea cucumber
-![11](tools/test_result/458dehazed.jpg_fpn.jpg)   
-![12](tools/test_result/00_fpn.jpg)       
+![1](tools/test_result/1dehaze_fpn.jpg)   
+![2](tools/test_result/458dehazed_fpn.jpg)      
+![3](tools/test_result/177mscnn_fpn.jpg)   
 
 ## Note 
 The method was baesd on FPN reference [FPN_Tensorflow](https://github.com/yangxue0827/FPN_Tensorflow)
