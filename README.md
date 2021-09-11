@@ -66,6 +66,11 @@ data path format  ($FPN_ROOT/data/io/divide_data.py)
   ```Shell    
   tensorboard --logdir=$FPN_ROOT/output/res101_summary/
   ```    
+  
+## Implementation Details
+In libs/fast_rcnn/build_fast_rcnn.py, Line 316-324 is the code of piecewise focal loss.
+In libs/rpn/build_rpn.py Line 180-403 is the code of shortcut feature pyramid network.
+
 
 ## Test results    
 ### sea cucumber
