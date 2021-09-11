@@ -2,6 +2,7 @@
         
 A Tensorflow implementation of S-FPN detection framework.    
 You can refer to the paper [S-FPN: A shortcut feature pyramid network for sea cucumber detection in underwater images](https://www.sciencedirect.com/science/article/abs/pii/S0957417421007351)
+
 If useful to you, please star to support my work. Thanks.    
 
 ## Configuration Environment
@@ -13,7 +14,7 @@ ubuntu(Encoding problems may occur on windows) + python3 + tensorflow1.2 + cv2 +
   ```       
 
 ## Make tfrecord   
-The data is VOC format, reference [here](sample.xml)     
+The data is VOC format, reference [here](01SeaCucumber.xml)     
 data path format  ($FPN_ROOT/data/io/divide_data.py)      
 ```
 ├── VOCdevkit
@@ -27,7 +28,7 @@ data path format  ($FPN_ROOT/data/io/divide_data.py)
 
   ```Shell    
   cd $FPN_ROOT/data/io/  
-  python convert_data_to_tfrecord.py --VOC_dir='***/VOCdevkit/VOCdevkit_train/' --save_name='train' --img_format='.jpg' --dataset='ship'
+  python convert_data_to_tfrecord.py --VOC_dir='***/VOCdevkit/VOCdevkit_train/' --save_name='train' --img_format='.jpg' --dataset='sea_cucumber'
   ```
 
 ## Demo          
@@ -71,9 +72,6 @@ data path format  ($FPN_ROOT/data/io/divide_data.py)
   ```Shell    
   tensorboard --logdir=$FPN_ROOT/output/res101_summary/
   ```    
-![01](output/res101_summary/fast_rcnn_loss.bmp) 
-![02](output/res101_summary/rpn_loss.bmp) 
-![03](output/res101_summary/total_loss.bmp) 
 
 ## Test results    
 ### sea cucumber
