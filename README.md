@@ -1,20 +1,15 @@
-# Feature Pyramid Networks for Object Detection        
-
-## Recommend improved code： https://github.com/DetectionTeamUCAS      
+# S-FPN: A shortcut feature pyramid network for sea cucumber detection in underwater images             
         
-A Tensorflow implementation of FPN detection framework.    
-You can refer to the paper [Feature Pyramid Networks for Object Detection](https://arxiv.org/abs/1612.03144)    
-Rotation detection method baesd on FPN reference [R2CNN](https://github.com/yangxue0827/R2CNN_FPN_Tensorflow), [RRPN](https://github.com/yangJirui/RRPN_FPN_Tensorflow) and [R2CNN_HEAD](https://github.com/yangxue0827/R2CNN_HEAD_FPN_Tensorflow) and [R-DFPN](https://github.com/yangxue0827/R-DFPN_FPN_Tensorflow)  
-If useful to you, please star to support my work. Thanks.     
+A Tensorflow implementation of S-FPN detection framework.    
+You can refer to the paper [S-FPN: A shortcut feature pyramid network for sea cucumber detection in underwater images](https://www.sciencedirect.com/science/article/abs/pii/S0957417421007351)
+If useful to you, please star to support my work. Thanks.    
 
 ## Configuration Environment
-ubuntu(Encoding problems may occur on windows) + python2 + tensorflow1.2 + cv2 + cuda8.0 + GeForce GTX 1080      
-You can also use docker environment, command: docker pull yangxue2docker/tensorflow3_gpu_cv2_sshd:v1.0     
-
+ubuntu(Encoding problems may occur on windows) + python3 + tensorflow1.2 + cv2 + cuda>=9.0 + GeForce GTX 1080Ti    
 ## Installation    
   Clone the repository    
   ```Shell    
-  git clone https://github.com/yangxue0827/FPN_Tensorflow.git    
+  git clone https://github.com/FannierPeng/S-FPN_sea-cucumber.git
   ```       
 
 ## Make tfrecord   
@@ -66,10 +61,10 @@ data path format  ($FPN_ROOT/data/io/divide_data.py)
   python $FPN_ROOT/tools/test.py  
   ``` 
 
-## eval(Not recommended, Please refer [here](https://github.com/DetectionTeamUCAS)    
+## eval    
   ```Shell    
   cd $FPN_ROOT/tools   
-  python ship_eval.py
+  python eval.py
   ```  
 
 ## Summary   
@@ -80,22 +75,11 @@ data path format  ($FPN_ROOT/data/io/divide_data.py)
 ![02](output/res101_summary/rpn_loss.bmp) 
 ![03](output/res101_summary/total_loss.bmp) 
 
-## Graph
-![04](graph.png) 
-
 ## Test results    
-### airplane
+### sea cucumber
 ![11](tools/test_result/00_gt.jpg)   
-![12](tools/test_result/00_fpn.jpg)  
- 
-### sar_ship
-![13](tools/test_result/01_gt.jpg)   
-![14](tools/test_result/01_fpn.jpg)  
-
-### ship
-![15](tools/test_result/02_gt.jpg)    
-![16](tools/test_result/02_fpn.jpg)      
+![12](tools/test_result/00_fpn.jpg)       
 
 ## Note 
-This code works better when detecting single targets, but not suitable for multi-target detection tasks. Recommend improved code: https://github.com/DetectionTeamUCAS   
+The method was baesd on FPN reference [FPN_Tensorflow](https://github.com/yangxue0827/FPN_Tensorflow)
     
