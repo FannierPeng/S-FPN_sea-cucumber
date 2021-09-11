@@ -68,7 +68,7 @@ data path format  ($FPN_ROOT/data/io/divide_data.py)
   ```    
   
 ## Implementation Details
-In libs/fast_rcnn/build_fast_rcnn.py, Line 316-324 is the code of piecewise focal loss.
+In libs/fast_rcnn/build_fast_rcnn.py, Line 316-324 is the code of piecewise focal loss.         
 In libs/rpn/build_rpn.py Line 180-403 is the code of shortcut feature pyramid network.
 
 
